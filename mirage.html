@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!--
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Jekyll integration by Chris Bobbe | chrisbobbe.github.io
+-->
+<html><head><!-- Robots -->
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/mirage.html" /><!-- Title, description, author --><title>Mirage | MonzUn</title>
+  <meta name="description" content="Mirage | MonzUn" />
+  <meta name="author" content="Daniel "MonzUn" Bengtsson" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mirage | MonzUn" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/images/exclamationmark.jpg" />
+  <meta property="og:url" content="http://localhost:4000/mirage.html" />
+  <meta property="og:site_name" content="MonzUn" />
+  <meta property="og:description" content="Mirage | MonzUn" />
+  
+  <!-- Styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js" defer></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
+  <script src="/assets/js/jquery.scrolly.min.js" defer></script>
+  <script src="/assets/js/jquery.scrollzer.min.js" defer></script>
+  <script src="/assets/js/skel.min.js" defer></script>
+  <script src="/assets/js/util.js" defer></script>
+  <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js" defer></script><![endif]-->
+  <script src="/assets/js/main.js" defer></script>
+
+</head><body><!-- Header -->
+<div id="header">
+  <div class="top"><!-- Logo -->
+<div id="logo">
+  <a href="http://localhost:4000/" id="home-link">
+    <span class="image avatar48"><img src="/assets/images/exclamationmark.jpg" alt="Avatar of Daniel "MonzUn" Bengtsson" /></span>
+    <h1 id="title">MonzUn</h1>
+    <p></p>
+  </a>
+</div><!-- Nav -->
+<nav id="nav">
+  <ul><li><a href="http://localhost:4000/" id="monzun-link">
+            <span class="icon fa-home">MonzUn</span>
+          </a></li><li><a href="#" id="mirage" class="active">
+            <span class="icon fa-pencil">Mirage</span>
+          </a></li><hr><li><a href="#faq" id="faq-link" class="scrolly"><span class="icon fa-file">FAQ</span></a></li><li><a href="#controls" id="controls-link" class="scrolly"><span class="icon fa-file">Controls</span></a></li><li><a href="#changelog" id="changelog-link" class="scrolly"><span class="icon fa-file">Changelog</span></a></li><li><a href="#roadmap" id="roadmap-link" class="scrolly"><span class="icon fa-file">Roadmap</span></a></li></ul>
+</nav></div>
+  <div class="bottom"><!-- Social Icons -->
+<ul class="icons"><li><a href="https://github.com/MonzUn" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:Daniel-bengtsson@live.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
+</div>
+</div>
+<!-- Main -->
+<div id="main"><!-- Sections --><section id="faq" class="shade-two">
+  <div class="container"><header>
+			<h2>FAQ</h2></header><font size="6" color="#000000">Does Mirage only work for PUBG?</font>
+<p>Currenty Yes.<br />
+This is because I use PUBG as a test app. Once Mirage enters beta it will be possible to configure it to use any clipping/position rectangles so that it can be used as a generic clipped screenshot sharing program.</p>
+
+<font size="6" color="#000000">Will Mirage afect my performance ingame?</font>
+<p>Most likely not.<br />
+Mirage only uses a little but of CPU and memory while processing an image. It does however currently consume a significant amount of bandwidth.</p>
+
+<font size="6" color="#000000">Why does my antivirus warn me about Mirage?</font>
+<p>False positive heuristics hit.<br />
+Many third party anti virus programs (AVG, Avast, etc) use heuristics (algorithmic guesswork) to identify unknown programs that behave suspiciously. For Mirage; they detect that it is taking background input and also opening network sockets and likely (falsely) flags it as a keylogger.</p>
+
+<font size="6" color="#000000">Why does BattlEye not let me start the game while Mirage is running?</font>
+<p>Anti virus has falsely flagged it as malicious.<br />
+Battleye does not allow suspected malicious programs to run alongside the game.</p>
+
+<font size="6" color="#000000">All my screenshots are black/old; why?</font>
+<p>You are running the game in fullscreen.<br />
+Games running in fullscreen cannot be captured via the OS interface. I will try to implement support for fullscreen applications after 1.0 but this requires som hacking that anti cheat engines (like BattlEye doesn’t like).</p>
+</div>
+</section>
+<section id="controls" class="shade-three">
+  <div class="container"><header>
+			<h2>Controls</h2></header><font size="6" color="#000000">Grave</font>
+<p>Synchronizes a screenshot<br /></p>
+
+<font size="6" color="#000000">Tab</font>
+<p>Synchronizes a screenshot every other time it is pressed<br /></p>
+
+<font size="6" color="#000000">Angled brackets (Left of Z; right of Shift)</font>
+<p>Primes screenshot cycle<br /></p>
+</div>
+</section>
+<section id="changelog" class="shade-four">
+  <div class="container"><header>
+			<h2>Changelog</h2></header><font size="6" color="#000000">0.7</font>
+<p>Split screenshot into smaller parts and created a layout for them in order to increase visibility and readability<br />
+A cycled screenshot will no longer be taken when using the alt+ tab key combination<br />
+Changed the key for priming the cycled screenshots to angled brackets (Left of Z; right of Shift)<br />
+Added functionality for disconnecting a specific player<br />
+Added “Prime” command to CLI so that any user can prime any other users cycled screenshots<br />
+Fixed a bug where a faulty cycled screenshot could be taken if tab was pressed more than two times before the screenshot could be taken<br />
+Fixed a memory leak that would occur if a split screenshot failed<br /></p>
+
+<font size="6" color="#000000">0.6</font>
+<p>Added disconnection handling<br />
+Added protection against mistimed screenshots<br />
+Added disconnect and quit CLI commands<br />
+Moved image handling to its own thread in order to avoid stalls<br />
+Newly connected clients will now always receive the images of all relayed clients<br />
+CLI command input is now case insensitive<br />
+Fixed a crash that would occur if an invalid IPv4 address was supplied to the connect command<br /></p>
+
+<font size="6" color="#000000">0.5</font>
+<p>Minimal viable product version.
+Can be used to synchronize screenshots between four clients.</p>
+</div>
+</section>
+<section id="roadmap" class="shade-three">
+  <div class="container"><header>
+			<h2>Roadmap</h2></header><font size="6" color="#000000">0.8 (Alpha)</font>
+<p>Add help command to console<br />
+Add controls list<br />
+Add user name to main menu, config and main screen<br />
+Make clients send their logs upon disconnection<br />
+Add connetion attempt feedback<br />
+Rename project<br />
+Move to closed repo<br />
+Add “go to site” button<br /></p>
+
+<font size="6" color="#000000">0.9 (Beta)</font>
+<p>Code cleanup + Technical depth repayment<br />
+Fix textbox-&gt;textbox clicking bug<br />
+Make clipping rect definable from file<br />
+Make input keys definable from file<br />
+Make timer definable from file<br />
+Update PUBG clipping rects<br />
+Add setup selection list to main menu<br />
+Create per player UI button/info row in main screen<br />
+Add appname to mainmenu<br /></p>
+
+<font size="6" color="#000000">1.0 (Full)</font>
+<p>Code cleanup + Technical depth repayment<br />
+Add donation button<br />
+Add MEngine button<br />
+Add Tubes button<br /></p>
+
+<font size="6" color="#000000">1.0+</font>
+<p>Code cleanup + Technical depth repayment<br />
+Attempt fullscreen screenshots<br />
+Make application size scalable<br />
+Optimize bandwidth usage<br />
+Add secondary window options (Test using PUBG map)<br />
+Button / command to save screenshot to file<br /></p>
+</div>
+</section>
+</div><!-- Footer -->
+<div id="footer">
+  
+  <!-- Copyright -->
+  <ul class="copyright">
+    
+      <li>&copy;MonzUn. All rights reserved.</li>
+    
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  
+</div></body>
+</html>
