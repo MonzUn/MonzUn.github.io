@@ -53,7 +53,7 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
           </a></li><hr><li><a href="#faq" id="faq-link" class="scrolly"><span class="icon fa-file">FAQ</span></a></li><li><a href="#controls" id="controls-link" class="scrolly"><span class="icon fa-file">Controls</span></a></li><li><a href="#changelog" id="changelog-link" class="scrolly"><span class="icon fa-file">Changelog</span></a></li><li><a href="#roadmap" id="roadmap-link" class="scrolly"><span class="icon fa-file">Roadmap</span></a></li></ul>
 </nav></div>
   <div class="bottom"><!-- Social Icons -->
-<ul class="icons"><li><a href="https://github.com/MonzUn" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:Daniel-bengtsson@live.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
+<ul class="icons"><li><a href="https://github.com/MonzUn" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:monzundev@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
 </div>
 </div>
 <!-- Main -->
@@ -63,9 +63,9 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 <p>Currenty Yes.<br />
 This is because I use PUBG as a test app. Once Mirage enters beta it will be possible to configure it to use any clipping/position rectangles so that it can be used as a generic clipped screenshot sharing program.</p>
 
-<font size="6" color="#000000">Will Mirage afect my performance ingame?</font>
+<font size="6" color="#000000">Will Mirage affect my performance ingame?</font>
 <p>Most likely not.<br />
-Mirage only uses a little but of CPU and memory while processing an image. It does however currently consume a significant amount of bandwidth.</p>
+Mirage only uses a little bit of CPU and memory while processing an image. It does however currently consume a significant amount of bandwidth.</p>
 
 <font size="6" color="#000000">Why does my antivirus warn me about Mirage?</font>
 <p>False positive heuristics hit.<br />
@@ -82,14 +82,21 @@ Games running in fullscreen cannot be captured via the OS interface. I will try 
 </section>
 <section id="controls" class="shade-three">
   <div class="container"><header>
-			<h2>Controls</h2></header><font size="6" color="#000000">Grave</font>
-<p>Synchronizes a screenshot<br /></p>
+			<h2>Controls</h2></header><font size="6" color="#000000">IMPORTANT</font>
+<p>Mirage takes input while in the background and has no knowledge about the captured software. It just captures the screen regardless of what program currently has focus.<br /></p>
+
+<font size="6" color="#000000">Grave(Above tab; left of number row 1)</font>
+<p>Synchronizes a full screenshot.<br /></p>
 
 <font size="6" color="#000000">Tab</font>
-<p>Synchronizes a screenshot every other time it is pressed<br /></p>
+<p>Synchronizes a split screenshot every other time it is pressed.<br />
+This may reverse the screenshot cycle if used outside of the captured software</p>
 
 <font size="6" color="#000000">Angled brackets (Left of Z; right of Shift)</font>
-<p>Primes screenshot cycle<br /></p>
+<p>Primes split screenshot cycle (It may become reversed).<br /></p>
+
+<font size="6" color="#000000">Numpad comma (Right of numpad 0)</font>
+<p>Opens/closes dev console.<br /></p>
 </div>
 </section>
 <section id="changelog" class="shade-four">
@@ -119,40 +126,46 @@ Can be used to synchronize screenshots between four clients.</p>
 </section>
 <section id="roadmap" class="shade-three">
   <div class="container"><header>
-			<h2>Roadmap</h2></header><font size="6" color="#000000">0.8 (Alpha)</font>
-<p>Add help command to console<br />
-Add controls list<br />
-Add user name to main menu, config and main screen<br />
-Make clients send their logs upon disconnection<br />
-Add connetion attempt feedback<br />
-Rename project<br />
-Move to closed repo<br />
-Add “go to site” button<br /></p>
+			<h2>Roadmap</h2></header><font size="6" color="#000000">0.8 (Alpha)<br /></font>
 
-<font size="6" color="#000000">0.9 (Beta)</font>
-<p>Code cleanup + Technical depth repayment<br />
-Fix textbox-&gt;textbox clicking bug<br />
-Make clipping rect definable from file<br />
-Make input keys definable from file<br />
-Make timer definable from file<br />
-Update PUBG clipping rects<br />
-Add setup selection list to main menu<br />
-Create per player UI button/info row in main screen<br />
-Add appname to mainmenu<br /></p>
+<font size="5" color="#000000"><strike>Add help command to console</strike><br /></font>
+<font size="5" color="#000000"><strike>Add temporary controls list to main menu</strike><br /></font>
+<font size="5" color="#000000"><strike>Add user name input to main menu and config</strike><br /></font>
+<font size="5" color="#000000">Make clients send their logs upon disconnection<br /></font>
+<font size="5" color="#000000">Add connetion attempt feedback<br /></font>
+<font size="5" color="#000000">Rename project<br /></font>
+<font size="5" color="#000000"><strike>Add Mirage name to mainmenu</strike><br /></font>
+<font size="5" color="#000000"><strike>Add version number to main menu</strike><br /></font>
+<font size="5" color="#000000">Move to closed repo<br /></font>
+<font size="5" color="#000000">Add "Report bug" button to main menu<br /><br /></font>
 
-<font size="6" color="#000000">1.0 (Full)</font>
-<p>Code cleanup + Technical depth repayment<br />
-Add donation button<br />
-Add MEngine button<br />
-Add Tubes button<br /></p>
+<font size="6" color="#000000">0.9 (Beta)<br /></font>
+<font size="5" color="#000000">Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Fix textbox-&gt;textbox clicking bug<br /></font>
+<font size="5" color="#000000">Make clipping rect definable from file<br /></font>
+<font size="5" color="#000000">Make input keys definable from file<br /></font>
+<font size="5" color="#000000">Make timer definable from file<br /></font>
+<font size="5" color="#000000">Add controls list command<br /></font>
+<font size="5" color="#000000">Update PUBG clipping rects<br /></font>
+<font size="5" color="#000000">Add setup selection list to main menu<br /></font>
+<font size="5" color="#000000">Create per player UI button/info row in main screen<br /></font>
+<font size="5" color="#000000">Add player name to per player UI<br /></font>
+<font size="5" color="#000000">Add button mouseover and click effects<br /><br /></font>
 
-<font size="6" color="#000000">1.0+</font>
-<p>Code cleanup + Technical depth repayment<br />
-Attempt fullscreen screenshots<br />
-Make application size scalable<br />
-Optimize bandwidth usage<br />
-Add secondary window options (Test using PUBG map)<br />
-Button / command to save screenshot to file<br /></p>
+<font size="6" color="#000000">1.0 (Full)<br /></font>
+<font size="5" color="#000000">Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Add donation button<br /></font>
+<font size="5" color="#000000">Add MEngine button<br /></font>
+<font size="5" color="#000000">Add Tubes button<br /></font>
+<font size="5" color="#000000">Add proper controls screen (Setup + bindable keys)<br /><br /></font>
+
+<font size="6" color="#000000">1.0+<br /></font>
+<font size="5" color="#000000">Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Attempt fullscreen screenshots<br /></font>
+<font size="5" color="#000000">Make application size scalable<br /></font>
+<font size="5" color="#000000">Optimize bandwidth usage<br /></font>
+<font size="5" color="#000000">Add secondary window options (Test using PUBG map)<br /></font>
+<font size="5" color="#000000">Button / command to save screenshot to file<br /></font>
 </div>
 </section>
 </div><!-- Footer -->
