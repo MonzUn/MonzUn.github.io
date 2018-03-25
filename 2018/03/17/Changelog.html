@@ -1,4 +1,23 @@
-<font size="6" color="#000000">0.7</font>
+<font size="6" color="#000000">0.8 (Alpha)</font>
+<p>Added main menu<br />
+Added user names (stored in config)<br />
+Added about page<br />
+Added links to devblog, controls list and bug reporting<br />
+Added license files<br />
+Added indicator to show if each player has primed their split(tab) screenshot<br />
+Added default image for players<br />
+Added remote sharing of client logs with host (default off; settable by host in config)<br />
+Updated visuals of session screen<br />
+Made screenshot and dev console aware of window focus<br />
+Replaced cmd with in-app dev console (opened/closed on grave key)<br />
+The IP and port of the last successful connection will now be saved and restored on startup<br />
+Listening port for hosts can now be set in the config file<br />
+Split(tab) screenshot is now also taken by the i-key since the test app uses that as default seconday inventory key<br />
+Fixed several keyboard keys throwing warnings when pressed<br />
+Fixed several minor memory leaks<br />
+Fixed a bug causing all screenshots to fail after the user had left a session and then hosted/connected another session<br /></p>
+
+<font size="6" color="#000000">0.7 (Pre Alpha)</font>
 <p>Split screenshot into smaller parts and created a layout for them in order to increase visibility and readability<br />
 A cycled screenshot will no longer be taken when using the alt+ tab key combination<br />
 Changed the key for priming the cycled screenshots to angled brackets (Left of Z; right of Shift)<br />
@@ -7,7 +26,7 @@ Added “Prime” command to CLI so that any user can prime any other users cycl
 Fixed a bug where a faulty cycled screenshot could be taken if tab was pressed more than two times before the screenshot could be taken<br />
 Fixed a memory leak that would occur if a split screenshot failed<br /></p>
 
-<font size="6" color="#000000">0.6</font>
+<font size="6" color="#000000">0.6 (Pre Alpha)</font>
 <p>Added disconnection handling<br />
 Added protection against mistimed screenshots<br />
 Added disconnect and quit CLI commands<br />
@@ -16,6 +35,6 @@ Newly connected clients will now always receive the images of all relayed client
 CLI command input is now case insensitive<br />
 Fixed a crash that would occur if an invalid IPv4 address was supplied to the connect command<br /></p>
 
-<font size="6" color="#000000">0.5</font>
+<font size="6" color="#000000">0.5 (MVP)</font>
 <p>Minimal viable product version.
 Can be used to synchronize screenshots between four clients.</p>

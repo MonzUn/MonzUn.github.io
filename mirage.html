@@ -57,7 +57,7 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
             <span class="icon fa-home">MonzUn</span>
           </a></li><li><a href="#" id="mirage" class="active">
             <span class="icon fa-pencil">Mirage</span>
-          </a></li><hr><li><a href="#introduction" id="introduction-link" class="scrolly"><span class="icon fa-file">Introduction</span></a></li><li><a href="#faq" id="faq-link" class="scrolly"><span class="icon fa-file">FAQ</span></a></li><li><a href="#download" id="download-link" class="scrolly"><span class="icon fa-file">Download</span></a></li><li><a href="#controls" id="controls-link" class="scrolly"><span class="icon fa-file">Controls</span></a></li><li><a href="#changelog" id="changelog-link" class="scrolly"><span class="icon fa-file">Changelog</span></a></li><li><a href="#roadmap" id="roadmap-link" class="scrolly"><span class="icon fa-file">Roadmap</span></a></li></ul>
+          </a></li><hr><li><a href="#introduction" id="introduction-link" class="scrolly"><span class="icon fa-file">Introduction</span></a></li><li><a href="#download" id="download-link" class="scrolly"><span class="icon fa-file">Download</span></a></li><li><a href="#faq" id="faq-link" class="scrolly"><span class="icon fa-file">FAQ</span></a></li><li><a href="#controls" id="controls-link" class="scrolly"><span class="icon fa-file">Controls</span></a></li><li><a href="#changelog" id="changelog-link" class="scrolly"><span class="icon fa-file">Changelog</span></a></li><li><a href="#roadmap" id="roadmap-link" class="scrolly"><span class="icon fa-file">Roadmap</span></a></li></ul>
 </nav></div>
   <div class="bottom"><!-- Social Icons -->
 <ul class="icons"><li><a href="https://github.com/MonzUn" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:monzundev@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
@@ -66,12 +66,24 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 <!-- Main -->
 <div id="main"><!-- Sections --><section id="introduction" class="shade-two">
   <div class="container"><header>
-			<h2>Introduction</h2></header><p><img src="assets/images/MirageAlphaView.png" alt="Mirage view (Alpha)" style="width:1280px;height:720px;" /></p>
+			<h2>Introduction</h2></header><font size="5" color="#000000">Mirage is a tool desiged to run alongside a game or program and synchronize screenshots between you and your friends.
+	The initial idea came to me when I got annoyed over the constant chatter regarding loot while playing PUBG and that's why I'm using it as a test case.
+	All users connect to a host before the game starts and Mirage then automates screenshot sharing every time a player opens his or her inventory. This way all players can see a somewhat up to date version of the other player's inventories and therefore VOIP can be used for more meaningful communication.<br /><br /></font>
+
+<p><img src="assets/images/MirageAlphaView.png" alt="Mirage view (Alpha)" style="width:1280px;height:720px;" /></p>
 <font size="6" color="#000000">This is what Mirage currently looks like.<br /></font>
 <font size="5" color="#000000">It's in Alpha right now and the only supported game is PUBG as I'm using that as a test case. For beta I will however implement a system that allows users (Like you! :D) to create their own setups that works for other games and programs.</font>
 </div>
 </section>
-<section id="faq" class="shade-three">
+<section id="download" class="shade-three">
+  <div class="container"><header>
+			<h2>Download</h2></header><font size="5" color="#000000">The latest version of Mirage can be downloaded</font>
+<font size="5" color="#0000ff"><a href="https://github.com/MonzUn/Mirage/releases">at Github</a><br /></font>
+<font size="6" color="#ff0000">--- DO NOT DOWNLOAD MIRAGE FROM ANY OTHER SOURCE ---</font>
+<font size="4" color="#000000"><br />(To avoid malicious repacks)</font>
+</div>
+</section>
+<section id="faq" class="shade-four">
   <div class="container"><header>
 			<h2>FAQ</h2></header><font size="6" color="#000000">Does Mirage only work for PUBG?</font>
 <p>Currenty Yes.<br />
@@ -102,14 +114,6 @@ Mirage only stores the config and log files and the data is not sent to any cent
 Since Mirage has issues with anti virus program heuristics; many users will likely just dismiss the warnings. If someone were to make a fake version of Mirage that is actually malicious and distribute it; user would likely just dismiss the warnings for that version as well and POOF! Your computer is now a bitcoin miner.</p>
 </div>
 </section>
-<section id="download" class="shade-four">
-  <div class="container"><header>
-			<h2>Download</h2></header><font size="5" color="#000000">The latest version of Mirage can be downloaded</font>
-<font size="5" color="#0000ff"><a href="https://github.com/MonzUn/Mirage/releases">at Github</a><br /></font>
-<font size="6" color="#ff0000">--- DO NOT DOWNLOAD MIRAGE FROM ANY OTHER SOURCE ---</font>
-<font size="4" color="#000000"><br />(To avoid malicious repacks)</font>
-</div>
-</section>
 <section id="controls" class="shade-three">
   <div class="container"><header>
 			<h2>Controls</h2></header><font size="6" color="#000000">IMPORTANT<br /></font>
@@ -137,7 +141,26 @@ This may reverse the screenshot cycle if used outside of the captured software<b
 </section>
 <section id="changelog" class="shade-two">
   <div class="container"><header>
-			<h2>Changelog</h2></header><font size="6" color="#000000">0.7</font>
+			<h2>Changelog</h2></header><font size="6" color="#000000">0.8 (Alpha)</font>
+<p>Added main menu<br />
+Added user names (stored in config)<br />
+Added about page<br />
+Added links to devblog, controls list and bug reporting<br />
+Added license files<br />
+Added indicator to show if each player has primed their split(tab) screenshot<br />
+Added default image for players<br />
+Added remote sharing of client logs with host (default off; settable by host in config)<br />
+Updated visuals of session screen<br />
+Made screenshot and dev console aware of window focus<br />
+Replaced cmd with in-app dev console (opened/closed on grave key)<br />
+The IP and port of the last successful connection will now be saved and restored on startup<br />
+Listening port for hosts can now be set in the config file<br />
+Split(tab) screenshot is now also taken by the i-key since the test app uses that as default seconday inventory key<br />
+Fixed several keyboard keys throwing warnings when pressed<br />
+Fixed several minor memory leaks<br />
+Fixed a bug causing all screenshots to fail after the user had left a session and then hosted/connected another session<br /></p>
+
+<font size="6" color="#000000">0.7 (Pre Alpha)</font>
 <p>Split screenshot into smaller parts and created a layout for them in order to increase visibility and readability<br />
 A cycled screenshot will no longer be taken when using the alt+ tab key combination<br />
 Changed the key for priming the cycled screenshots to angled brackets (Left of Z; right of Shift)<br />
@@ -146,7 +169,7 @@ Added “Prime” command to CLI so that any user can prime any other users cycl
 Fixed a bug where a faulty cycled screenshot could be taken if tab was pressed more than two times before the screenshot could be taken<br />
 Fixed a memory leak that would occur if a split screenshot failed<br /></p>
 
-<font size="6" color="#000000">0.6</font>
+<font size="6" color="#000000">0.6 (Pre Alpha)</font>
 <p>Added disconnection handling<br />
 Added protection against mistimed screenshots<br />
 Added disconnect and quit CLI commands<br />
@@ -155,29 +178,15 @@ Newly connected clients will now always receive the images of all relayed client
 CLI command input is now case insensitive<br />
 Fixed a crash that would occur if an invalid IPv4 address was supplied to the connect command<br /></p>
 
-<font size="6" color="#000000">0.5</font>
+<font size="6" color="#000000">0.5 (MVP)</font>
 <p>Minimal viable product version.
 Can be used to synchronize screenshots between four clients.</p>
 </div>
 </section>
 <section id="roadmap" class="shade-three">
   <div class="container"><header>
-			<h2>Roadmap</h2></header><font size="6" color="#000000">0.8 (Alpha)<br /></font>
-
-<font size="5" color="#000000"><strike>Add help command to console</strike><br /></font>
-<font size="5" color="#000000"><strike>Add temporary controls list to main menu</strike><br /></font>
-<font size="5" color="#000000"><strike>Add user name input to main menu, config and player UI</strike><br /></font>
-<font size="5" color="#000000"><strike>Create setting for making clients synchronize their logs with the host</strike><br /></font>
-<font size="5" color="#000000"><strike>Add connetion attempt feedback</strike><br /></font>
-<font size="5" color="#000000"><strike>Rename project Mirage</strike><br /></font>
-<font size="5" color="#000000"><strike>Add Mirage name to mainmenu</strike><br /></font>
-<font size="5" color="#000000"><strike>Add version number to main menu</strike><br /></font>
-<font size="5" color="#000000"><strike>Move to closed repo</strike><br /></font>
-<font size="5" color="#000000"><strike>Change console hotkey to grave and make it work only when focused</strike><br /></font>
-<font size="5" color="#000000">Add "Report bug" button to main menu<br /><br /></font>
-
-<font size="6" color="#000000">0.9 (Beta)<br /></font>
-<font size="5" color="#000000">Bufixes + Code cleanup + Technical depth repayment<br /></font>
+			<h2>Roadmap</h2></header><font size="6" color="#000000">0.9 (Beta)<br /></font>
+<font size="5" color="#000000">Bugfixes + Code cleanup + Technical depth repayment<br /></font>
 <font size="5" color="#000000">Fix textbox-&gt;textbox clicking bug<br /></font>
 <font size="5" color="#000000">Make clipping rect definable from file<br /></font>
 <font size="5" color="#000000">Make input keys definable from file<br /></font>
@@ -189,14 +198,15 @@ Can be used to synchronize screenshots between four clients.</p>
 <font size="5" color="#000000">Add button mouseover and click effects<br /><br /></font>
 
 <font size="6" color="#000000">1.0 (Full)<br /></font>
-<font size="5" color="#000000">Bufixes + Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Bugfixes + Code cleanup + Technical depth repayment<br /></font>
 <font size="5" color="#000000">Add donation button<br /></font>
 <font size="5" color="#000000">Add MEngine button<br /></font>
 <font size="5" color="#000000">Add Tubes button<br /></font>
-<font size="5" color="#000000">Add proper controls screen (Setup + bindable keys)<br /><br /></font>
+<font size="5" color="#000000">Add proper controls screen (Setup + bindable keys)<br /></font>
+<font size="5" color="#000000">Optimize bandwidth usage<br /><br /></font>
 
 <font size="6" color="#000000">1.0+<br /></font>
-<font size="5" color="#000000">Bufixes + Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Bugfixes + Code cleanup + Technical depth repayment<br /></font>
 <font size="5" color="#000000">Attempt fullscreen screenshots<br /></font>
 <font size="5" color="#000000">Make application size scalable<br /></font>
 <font size="5" color="#000000">Optimize bandwidth usage<br /></font>
