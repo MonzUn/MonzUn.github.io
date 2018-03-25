@@ -5,7 +5,14 @@ html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 -->
-<html><head><!-- Robots -->
+<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116364126-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116364126-1');
+</script><!-- Robots -->
   <meta name="robots" content="index, follow" /><link rel="canonical" href="https://monzun.github.io/mirage.html" /><!-- Title, description, author --><title>Mirage | MonzUn</title>
   <meta name="description" content="Mirage | MonzUn" />
   <meta name="author" content="Daniel MonzUn Bengtsson" />
@@ -50,14 +57,21 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
             <span class="icon fa-home">MonzUn</span>
           </a></li><li><a href="#" id="mirage" class="active">
             <span class="icon fa-pencil">Mirage</span>
-          </a></li><hr><li><a href="#faq" id="faq-link" class="scrolly"><span class="icon fa-file">FAQ</span></a></li><li><a href="#controls" id="controls-link" class="scrolly"><span class="icon fa-file">Controls</span></a></li><li><a href="#changelog" id="changelog-link" class="scrolly"><span class="icon fa-file">Changelog</span></a></li><li><a href="#roadmap" id="roadmap-link" class="scrolly"><span class="icon fa-file">Roadmap</span></a></li></ul>
+          </a></li><hr><li><a href="#introduction" id="introduction-link" class="scrolly"><span class="icon fa-file">Introduction</span></a></li><li><a href="#faq" id="faq-link" class="scrolly"><span class="icon fa-file">FAQ</span></a></li><li><a href="#download" id="download-link" class="scrolly"><span class="icon fa-file">Download</span></a></li><li><a href="#controls" id="controls-link" class="scrolly"><span class="icon fa-file">Controls</span></a></li><li><a href="#changelog" id="changelog-link" class="scrolly"><span class="icon fa-file">Changelog</span></a></li><li><a href="#roadmap" id="roadmap-link" class="scrolly"><span class="icon fa-file">Roadmap</span></a></li></ul>
 </nav></div>
   <div class="bottom"><!-- Social Icons -->
 <ul class="icons"><li><a href="https://github.com/MonzUn" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:monzundev@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
 </div>
 </div>
 <!-- Main -->
-<div id="main"><!-- Sections --><section id="faq" class="shade-two">
+<div id="main"><!-- Sections --><section id="introduction" class="shade-two">
+  <div class="container"><header>
+			<h2>Introduction</h2></header><p><img src="assets/images/MirageAlphaView.png" alt="Mirage view (Alpha)" style="width:1280px;height:720px;" /></p>
+<font size="6" color="#000000">This is what Mirage currently looks like.<br /></font>
+<font size="5" color="#000000">It's in Alpha right now and the only supported game is PUBG as I'm using that as a test case. For beta I will however implement a system that allows users (Like you! :D) to create their own setups that works for other games and programs.</font>
+</div>
+</section>
+<section id="faq" class="shade-three">
   <div class="container"><header>
 			<h2>FAQ</h2></header><font size="6" color="#000000">Does Mirage only work for PUBG?</font>
 <p>Currenty Yes.<br />
@@ -77,29 +91,51 @@ Battleye does not allow suspected malicious programs to run alongside the game.<
 
 <font size="6" color="#000000">All my screenshots are black/old; why?</font>
 <p>You are running the game in fullscreen.<br />
-Games running in fullscreen cannot be captured via the OS interface. I will try to implement support for fullscreen applications after 1.0 but this requires som hacking that anti cheat engines (like BattlEye doesn’t like).</p>
+Games running in fullscreen cannot be captured via the OS interface. I will try to implement support for fullscreen applications after 1.0 but this requires som hacking that anti cheat engines (like BattlEye) probably approve of.</p>
+
+<font size="6" color="#000000">Does Mirage collect and store any of my information?</font>
+<p>No.<br />
+Mirage only stores the config and log files and the data is not sent to any centralized server.</p>
+
+<font size="6" color="#000000">Why isn't Mirage open source?</font>
+<p>For your safety.<br />
+Since Mirage has issues with anti virus program heuristics; many users will likely just dismiss the warnings. If someone were to make a fake version of Mirage that is actually malicious and distribute it; user would likely just dismiss the warnings for that version as well and POOF! Your computer is now a bitcoin miner.</p>
+</div>
+</section>
+<section id="download" class="shade-four">
+  <div class="container"><header>
+			<h2>Download</h2></header><font size="5" color="#000000">The latest version of Mirage can be downloaded</font>
+<font size="5" color="#0000ff"><a href="https://github.com/MonzUn/Mirage/releases">at Github</a><br /></font>
+<font size="6" color="#ff0000">--- DO NOT DOWNLOAD MIRAGE FROM ANY OTHER SOURCE ---</font>
+<font size="4" color="#000000"><br />(To avoid malicious repacks)</font>
 </div>
 </section>
 <section id="controls" class="shade-three">
   <div class="container"><header>
-			<h2>Controls</h2></header><font size="6" color="#000000">IMPORTANT</font>
-<p>Mirage takes input while in the background and has no knowledge about the captured software. It just captures the screen regardless of what program currently has focus.<br /></p>
+			<h2>Controls</h2></header><font size="6" color="#000000">IMPORTANT<br /></font>
+<font size="5" color="#000000">Mirage takes input while in the background and has no knowledge about the captured software. It just captures the screen regardless of what program currently has focus.<br /></font>
 
-<font size="6" color="#000000">Grave(Above tab; left of number row 1)</font>
-<p>Synchronizes a full screenshot.<br /></p>
+<font size="6" color="#000000">-----------------------------------------------------------------------------------------------------<br /></font>
 
-<font size="6" color="#000000">Tab</font>
-<p>Synchronizes a split screenshot every other time it is pressed.<br />
-This may reverse the screenshot cycle if used outside of the captured software</p>
+<font size="6" color="#000000">Grave(Above tab; left of number row 1)<br /></font>
+<font size="5" color="#000000">Synchronizes a full screenshot. <font size="3" color="#000000">(Only works if Mirage doesn't have focus)<br /><br /></font>
 
-<font size="6" color="#000000">Angled brackets (Left of Z; right of Shift)</font>
-<p>Primes split screenshot cycle (It may become reversed).<br /></p>
+<font size="6" color="#000000">Tab<br /></font>
+<font size="5" color="#000000">Synchronizes a split screenshot every other time it is pressed. <font size="3" color="#000000">(Only works if Mirage doesn't have focus)</font><br />
+This may reverse the screenshot cycle if used outside of the captured software<br /><br /></font>
 
-<font size="6" color="#000000">Numpad comma (Right of numpad 0)</font>
-<p>Opens/closes dev console.<br /></p>
+<font size="6" color="#000000">Angled brackets (Left of Z; right of Shift)<br /></font>
+<font size="5" color="#000000">Primes split screenshot cycle.</font>
+<font size="3" color="#000000">(It may become reversed)<br /><br /></font>
+
+
+<font size="6" color="#000000">Grave(Above tab; left of number row 1)<br /></font>
+<font size="5" color="#000000">Opens/closes dev console.</font>
+<font size="3" color="#000000">(Only works if Mirage has focus)<br /></font>
+</font>
 </div>
 </section>
-<section id="changelog" class="shade-four">
+<section id="changelog" class="shade-two">
   <div class="container"><header>
 			<h2>Changelog</h2></header><font size="6" color="#000000">0.7</font>
 <p>Split screenshot into smaller parts and created a layout for them in order to increase visibility and readability<br />
@@ -130,17 +166,18 @@ Can be used to synchronize screenshots between four clients.</p>
 
 <font size="5" color="#000000"><strike>Add help command to console</strike><br /></font>
 <font size="5" color="#000000"><strike>Add temporary controls list to main menu</strike><br /></font>
-<font size="5" color="#000000"><strike>Add user name input to main menu and config</strike><br /></font>
-<font size="5" color="#000000">Make clients send their logs upon disconnection<br /></font>
-<font size="5" color="#000000">Add connetion attempt feedback<br /></font>
-<font size="5" color="#000000">Rename project<br /></font>
+<font size="5" color="#000000"><strike>Add user name input to main menu, config and player UI</strike><br /></font>
+<font size="5" color="#000000"><strike>Create setting for making clients synchronize their logs with the host</strike><br /></font>
+<font size="5" color="#000000"><strike>Add connetion attempt feedback</strike><br /></font>
+<font size="5" color="#000000"><strike>Rename project Mirage</strike><br /></font>
 <font size="5" color="#000000"><strike>Add Mirage name to mainmenu</strike><br /></font>
 <font size="5" color="#000000"><strike>Add version number to main menu</strike><br /></font>
-<font size="5" color="#000000">Move to closed repo<br /></font>
+<font size="5" color="#000000"><strike>Move to closed repo</strike><br /></font>
+<font size="5" color="#000000"><strike>Change console hotkey to grave and make it work only when focused</strike><br /></font>
 <font size="5" color="#000000">Add "Report bug" button to main menu<br /><br /></font>
 
 <font size="6" color="#000000">0.9 (Beta)<br /></font>
-<font size="5" color="#000000">Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Bufixes + Code cleanup + Technical depth repayment<br /></font>
 <font size="5" color="#000000">Fix textbox-&gt;textbox clicking bug<br /></font>
 <font size="5" color="#000000">Make clipping rect definable from file<br /></font>
 <font size="5" color="#000000">Make input keys definable from file<br /></font>
@@ -149,23 +186,23 @@ Can be used to synchronize screenshots between four clients.</p>
 <font size="5" color="#000000">Update PUBG clipping rects<br /></font>
 <font size="5" color="#000000">Add setup selection list to main menu<br /></font>
 <font size="5" color="#000000">Create per player UI button/info row in main screen<br /></font>
-<font size="5" color="#000000">Add player name to per player UI<br /></font>
 <font size="5" color="#000000">Add button mouseover and click effects<br /><br /></font>
 
 <font size="6" color="#000000">1.0 (Full)<br /></font>
-<font size="5" color="#000000">Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Bufixes + Code cleanup + Technical depth repayment<br /></font>
 <font size="5" color="#000000">Add donation button<br /></font>
 <font size="5" color="#000000">Add MEngine button<br /></font>
 <font size="5" color="#000000">Add Tubes button<br /></font>
 <font size="5" color="#000000">Add proper controls screen (Setup + bindable keys)<br /><br /></font>
 
 <font size="6" color="#000000">1.0+<br /></font>
-<font size="5" color="#000000">Code cleanup + Technical depth repayment<br /></font>
+<font size="5" color="#000000">Bufixes + Code cleanup + Technical depth repayment<br /></font>
 <font size="5" color="#000000">Attempt fullscreen screenshots<br /></font>
 <font size="5" color="#000000">Make application size scalable<br /></font>
 <font size="5" color="#000000">Optimize bandwidth usage<br /></font>
 <font size="5" color="#000000">Add secondary window options (Test using PUBG map)<br /></font>
 <font size="5" color="#000000">Button / command to save screenshot to file<br /></font>
+<font size="5" color="#000000">Linux support<br /></font>
 </div>
 </section>
 </div><!-- Footer -->
