@@ -112,6 +112,10 @@ Mirage only stores the config and log files and the data is not sent to any cent
 <font size="6" color="#000000">Why isn't Mirage open source?</font>
 <p>For your safety.<br />
 Since Mirage has issues with anti virus program heuristics; many users will likely just dismiss the warnings. If someone were to make a fake version of Mirage that is actually malicious and distribute it; user would likely just dismiss the warnings for that version as well and POOF! Your computer is now a bitcoin miner.</p>
+
+<font size="6" color="#000000">Do you need any help?</font>
+<p>Maybe.<br />
+Have a look at the &lt;a href=https://github.com/MonzUn/Mirage/issues”url”&gt;issue tracker&lt;/a&gt; and see if there’s anything tagged with “Help wanted”.</p>
 </div>
 </section>
 <section id="controls" class="shade-three">
@@ -141,7 +145,18 @@ This may reverse the screenshot cycle if used outside of the captured software<b
 </section>
 <section id="changelog" class="shade-two">
   <div class="container"><header>
-			<h2>Changelog</h2></header><font size="6" color="#000000">0.8 (Alpha)</font>
+			<h2>Changelog</h2></header><font size="6" color="#000000">0.8.1 (Alpha)</font>
+<p>Corrected faulty version number <br />
+Text input now only accepts ASCII characters; this avoids issues with text input and rendering <br />
+Config keys and values are now stored in their original casing <br />
+Fixed issue causing the last character of a remote log message to be repeatedly put into the remote log once each frame <br />
+Fixed issue causing the dev console to cut off output after 1024 characters <br />
+Fixed an issue causing console command output to be displayed twice <br />
+Fixed test app item counter not displaying the third digit when there was a scrollbar <br />
+Fixed test app inventory display not showing the last item in the inventory (Inventory layout was changed in  test app) <br />
+Fixed test app gear slots display being incorrectly clipped (Gear slot layout was changed in test app)<br /></p>
+
+<font size="6" color="#000000">0.8 (Alpha)</font>
 <p>Added main menu<br />
 Added user names (stored in config)<br />
 Added about page<br />
@@ -190,7 +205,7 @@ Can be used to synchronize screenshots between four clients.</p>
 <font size="5" color="#000000">Fix textbox-&gt;textbox clicking bug<br /></font>
 <font size="5" color="#000000">Make clipping rect definable from file<br /></font>
 <font size="5" color="#000000">Make input keys definable from file<br /></font>
-<font size="5" color="#000000">Make timer definable from file<br /></font>
+<font size="5" color="#000000">Make screenshot timer definable from file<br /></font>
 <font size="5" color="#000000">Make which screen to screenshot selectable via UI<br /></font>
 <font size="5" color="#000000">Add controls list command<br /></font>
 <font size="5" color="#000000">Update PUBG clipping rects<br /></font>
@@ -198,9 +213,7 @@ Can be used to synchronize screenshots between four clients.</p>
 <font size="5" color="#000000">Create per player UI button/info row in main screen<br /></font>
 <font size="5" color="#000000">Add pause button to per player UI<br /></font>
 <font size="5" color="#000000">Add button mouseover and click effects<br /></font>
-<font size="5" color="#000000">Add ignore list for keys combined with the split image key<br /></font>
-<font size="5" color="#000000">Fix Issue #1<br /></font>
-<font size="5" color="#000000">Fix Issue #2<br /><br /></font>
+<font size="5" color="#000000">Add ignore list for keys combined with the split image key<br /><br /></font>
 
 <font size="6" color="#000000">1.0 (Full)<br /></font>
 <font size="5" color="#000000">Bugfixes + Code cleanup + Technical debt repayment<br /></font>
