@@ -60,7 +60,7 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
           </a></li><hr><li><a href="#introduction" id="introduction-link" class="scrolly"><span class="icon fa-play">Introduction</span></a></li><li><a href="#download" id="download-link" class="scrolly"><span class="icon fa-download">Download</span></a></li><li><a href="#faq" id="faq-link" class="scrolly"><span class="icon fa-question">FAQ</span></a></li><li><a href="#controls" id="controls-link" class="scrolly"><span class="icon fa-gamepad">Controls</span></a></li><li><a href="#changelog" id="changelog-link" class="scrolly"><span class="icon fa-code">Changelog</span></a></li><li><a href="#roadmap" id="roadmap-link" class="scrolly"><span class="icon fa-map">Roadmap</span></a></li></ul>
 </nav></div>
   <div class="bottom"><!-- Social Icons -->
-<ul class="icons"><li><a href="https://www.reddit.com/r/MirageSoftware" class="icon fa-reddit"><span class="label">Reddit</span></a></li><li><a href="https://github.com/MonzUn" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:monzundev@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
+<ul class="icons"><li><a href="https://www.reddit.com/r/MirageSoftware" class="icon fa-reddit"><span class="label">Reddit</span></a></li><li><a href="https://discord.gg/hx82Ayh" class="icon fa-comments"><span class="label">Discord</span></a></li><li><a href="https://github.com/MonzUn" class="icon fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:monzundev@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
 </div>
 </div>
 <!-- Main -->
@@ -115,7 +115,11 @@ Since Mirage has issues with anti virus program heuristics; many users will like
 
 <font size="6" color="#000000">Do you need any help?</font>
 <p>Maybe.<br />
-Have a look at the &lt;a href=https://github.com/MonzUn/Mirage/issues”url”&gt;issue tracker&lt;/a&gt; and see if there’s anything tagged with “Help wanted”.</p>
+Have a look at the <a href="https://github.com/MonzUn/Mirage/issues">issue tracker</a> and see if there’s anything tagged with “Help wanted”.</p>
+
+<font size="6" color="#000000">How can I suggeest a feature?</font>
+<p>Using the <a href="https://github.com/MonzUn/Mirage/issues">issue tracker</a>.<br />
+Use the “Suggestion” label.</p>
 </div>
 </section>
 <section id="controls" class="shade-three">
@@ -145,7 +149,17 @@ This may reverse the screenshot cycle if used outside of the captured software<b
 </section>
 <section id="changelog" class="shade-two">
   <div class="container"><header>
-			<h2>Changelog</h2></header><font size="6" color="#000000">0.8.1 (Alpha)</font>
+			<h2>Changelog</h2></header><font size="6" color="#000000">0.8.2 (Alpha)</font>
+<p>Reworked background input to use RawInput instead of windows hooks(Reduces issues with false positive anti virus alerts) <br />
+Added Update button to main menu <br />
+Added randomize name button to main menu <br />
+Mirage window will now be created at the position it was last closed <br />
+Minor adjustments to the test app layout <br />
+Fixed split screenshots rendering on top of player border <br />
+Fixed prime indicator being rendered behind the screenshot images <br />
+Fixed a crash that would occur if the program was closed while a connection attempt was in progress <br /></p>
+
+<font size="6" color="#000000">0.8.1 (Alpha)</font>
 <p>Corrected faulty version number <br />
 Text input now only accepts ASCII characters; this avoids issues with text input and rendering <br />
 Config keys and values are now stored in their original casing <br />
@@ -202,7 +216,6 @@ Can be used to synchronize screenshots between four clients.</p>
   <div class="container"><header>
 			<h2>Roadmap</h2></header><font size="6" color="#000000">0.9 (Beta)<br /></font>
 <font size="5" color="#000000">Bugfixes + Code cleanup + Technical debt repayment<br /></font>
-<font size="5" color="#000000">Fix textbox-&gt;textbox clicking bug<br /></font>
 <font size="5" color="#000000">Make clipping rect definable from file<br /></font>
 <font size="5" color="#000000">Make input keys definable from file<br /></font>
 <font size="5" color="#000000">Make screenshot timer definable from file<br /></font>
