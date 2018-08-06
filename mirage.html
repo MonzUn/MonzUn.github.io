@@ -5,23 +5,16 @@ html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 -->
-<html><head><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116364126-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-116364126-1');
-</script><!-- Robots -->
-  <meta name="robots" content="index, follow" /><link rel="canonical" href="https://monzun.github.io/mirage.html" /><!-- Title, description, author --><title>Mirage | MonzUn</title>
+<html><head><!-- Robots -->
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/mirage.html" /><!-- Title, description, author --><title>Mirage | MonzUn</title>
   <meta name="description" content="Mirage | MonzUn" />
   <meta name="author" content="Daniel MonzUn Bengtsson" />
   
   <!-- Open Graph -->
   <meta property="og:title" content="Mirage | MonzUn" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://monzun.github.io/assets/images/exclamationmark.jpg" />
-  <meta property="og:url" content="https://monzun.github.io/mirage.html" />
+  <meta property="og:image" content="http://localhost:4000/assets/images/exclamationmark.jpg" />
+  <meta property="og:url" content="http://localhost:4000/mirage.html" />
   <meta property="og:site_name" content="MonzUn" />
   <meta property="og:description" content="Mirage | MonzUn" />
   
@@ -46,14 +39,14 @@ Jekyll integration by Chris Bobbe | chrisbobbe.github.io
 <div id="header">
   <div class="top"><!-- Logo -->
 <div id="logo">
-  <a href="https://monzun.github.io/" id="home-link">
+  <a href="http://localhost:4000/" id="home-link">
     <span class="image avatar48"><img src="/assets/images/exclamationmark.jpg" alt="Avatar of Daniel MonzUn Bengtsson" /></span>
     <h1 id="title">MonzUn</h1>
     <p></p>
   </a>
 </div><!-- Nav -->
 <nav id="nav">
-  <ul><li><a href="https://monzun.github.io/" id="monzun-link">
+  <ul><li><a href="http://localhost:4000/" id="monzun-link">
             <span class="icon fa-home">MonzUn</span>
           </a></li><li><a href="#" id="mirage" class="active">
             <span class="icon fa-eye">Mirage</span>
@@ -101,17 +94,13 @@ Many third party anti virus programs (AVG, Avast, etc) use heuristics (algorithm
 <p>Anti virus has falsely flagged it as malicious.<br />
 Battleye does not allow suspected malicious programs to run alongside the game.</p>
 
-<font size="6" color="#000000">All my screenshots are black/old; why?</font>
-<p>You are running the game in fullscreen.<br />
-Games running in fullscreen cannot be captured via the OS interface. I will try to implement support for fullscreen applications after 1.0 but this requires som hacking that anti cheat engines (like BattlEye) probably approve of.</p>
-
 <font size="6" color="#000000">Does Mirage collect and store any of my information?</font>
 <p>No.<br />
 Mirage only stores the config and log files and the data is not sent to any centralized server.</p>
 
 <font size="6" color="#000000">Why isn't Mirage open source?</font>
 <p>For your safety.<br />
-Since Mirage has issues with anti virus program heuristics; many users will likely just dismiss the warnings. If someone were to make a fake version of Mirage that is actually malicious and distribute it; user would likely just dismiss the warnings for that version as well and POOF! Your computer is now a bitcoin miner.<br />
+Since Mirage has issues with anti virus program heuristics; many users will likely just dismiss the warnings. If someone were to make a fake version of Mirage that is actually malicious and distribute it; users would likely just dismiss the warnings for that version as well and POOF! Your computer is now a bitcoin miner.<br />
 The source of my <a href="https://github.com/MonzUn/MEngine">game engine</a>, <a href="https://github.com/MonzUn/Tubes">network</a> and <a href="https://github.com/MonzUn/MUtility">utility</a> library is available though.</p>
 
 <font size="6" color="#000000">Do you need any help?</font>
@@ -146,6 +135,8 @@ This may reverse the screenshot cycle if used outside of the captured software<b
 <font size="5" color="#000000">Primes split screenshot cycle.</font>
 <font size="3" color="#000000">(It may become reversed)<br /><br /></font>
 
+<font size="6" color="#000000">Left alt + Angled brackets (Left of Z; right of Shift)<br /></font>
+<font size="5" color="#000000">Primes split screenshot cycle for all players.<br /><br /></font>
 
 <font size="6" color="#000000">Grave(Above tab; left of number row 1)<br /></font>
 <font size="5" color="#000000">Opens/closes dev console.</font>
@@ -156,10 +147,16 @@ This may reverse the screenshot cycle if used outside of the captured software<b
 <section id="changelog" class="shade-two">
   <div class="container"><header>
 			<h2>Changelog</h2></header><!--
-<font size="6" color="#000000">0.8.3 (Alpha)</font>
-Quit command is now available throughout the whole application
-Added support for additional keyboard keys
+<font size="6" color="#000000">0.8.4 (Alpha)</font>
+
  -->
+
+<font size="6" color="#000000">0.8.3 (Alpha)</font>
+<p>Added "ConnectionInfo" command that outputs connection information about directly conncted clients.<br />
+Added PrintKeys command that toggles printing of pressed key names and scancodes to log.<br />
+Added functionality for priming all player's screenshot cycles. It is bound to left alt + angeled bracket.<br />
+Quit command is now available throughout the whole application-<br />
+Implemented support for screenshots in fullscreen applications.<br /> </p>
 
 <font size="6" color="#000000">0.8.2 (Alpha)</font>
 <p>Reworked background input to use RawInput instead of windows hooks(Reduces issues with false positive anti virus alerts) <br />
@@ -226,7 +223,9 @@ Can be used to synchronize screenshots between four clients.</p>
 </section>
 <section id="roadmap" class="shade-three">
   <div class="container"><header>
-			<h2>Roadmap</h2></header><font size="6" color="#000000">0.9 (Beta)<br /></font>
+			<h2>Roadmap</h2></header><h1 id="add-check-to-make-sure-that-loaded-mir-is-consistent-across-all-connected-clients">Add check to make sure that loaded mir is consistent across all connected clients</h1>
+
+<font size="6" color="#000000">0.9 (Beta)<br /></font>
 <font size="5" color="#000000">Bugfixes + Code cleanup + Technical debt repayment<br /></font>
 <font size="5" color="#000000">Make clipping rect definable from file<br /></font>
 <font size="5" color="#000000">Make input keys definable from file<br /></font>
@@ -237,7 +236,6 @@ Can be used to synchronize screenshots between four clients.</p>
 <font size="5" color="#000000">Add setup selection list to main menu<br /></font>
 <font size="5" color="#000000">Create per player UI button/info row in main screen<br /></font>
 <font size="5" color="#000000">Add pause button to per player UI<br /></font>
-<font size="5" color="#000000">Add button mouseover and click effects<br /></font>
 <font size="5" color="#000000">Add ignore list for keys combined with the split image key<br /><br /></font>
 
 <font size="6" color="#000000">1.0 (Full)<br /></font>
@@ -246,16 +244,14 @@ Can be used to synchronize screenshots between four clients.</p>
 <font size="5" color="#000000">Add MEngine button<br /></font>
 <font size="5" color="#000000">Add Tubes button<br /></font>
 <font size="5" color="#000000">Add proper controls screen (Setup + bindable keys)<br /></font>
-<font size="5" color="#000000">Optimize bandwidth usage<br /><br /></font>
+<font size="5" color="#000000">Add button mouseover and click effects<br /></font>
 
 <font size="6" color="#000000">1.0+<br /></font>
 <font size="5" color="#000000">Bugfixes + Code cleanup + Technical debt repayment<br /></font>
-<font size="5" color="#000000">Attempt fullscreen screenshots<br /></font>
 <font size="5" color="#000000">Make application size scalable<br /></font>
 <font size="5" color="#000000">Optimize bandwidth usage<br /></font>
 <font size="5" color="#000000">Add secondary window options (Test using PUBG map)<br /></font>
 <font size="5" color="#000000">Button / command to save screenshot to file<br /></font>
-<font size="5" color="#000000">Linux support<br /></font>
 <font size="5" color="#000000">Localization support (non unicode dependent languages)<br /></font>
 </div>
 </section>
